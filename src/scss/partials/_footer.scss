@@ -1,0 +1,57 @@
+.footer{
+    background-image: url('https://airwallpaper.com/wp-content/uploads/wall001/Magic-The-Gathering-Wallpaper-HD.jpg');
+    color:white;
+    background-position: center;
+    background-size: cover;
+    
+    .links{
+      ul {list-style-type: none;
+        border: none;
+    }
+      li a{
+        color: white;
+        transition: color .2s;
+        &:hover{
+          text-decoration:none;
+          color:#3a99cd;
+          }
+      }
+    }  
+    .about-company{
+      i{font-size: 25px;}
+      a{
+        color:white;
+        transition: color .2s;
+        &:hover{color:#3a99cd}
+      }
+    } 
+    .location{
+      i{font-size: 18px;}
+    }
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+  }
+
+  .rowsblogpage {
+    margin-top: 30px;
+  }
+
+  .Blog h1 {
+    text-align: center;
+  }
+
+  .dashHeader {
+    text-align: center;
+  }
+
+  .rowDashboardMain {
+    margin-top: 70px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    ul li {
+      text-align: center;
+    }
+    &h4,p,h2{
+      text-align: center;
+    }
+  }

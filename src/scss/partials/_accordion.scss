@@ -1,0 +1,50 @@
+.accordion {
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #3a99cd;
+    padding: 5px;
+    margin: 10px;
+    background-size: cover;
+}
+
+.accordion:hover {
+    opacity: 0.8;
+    text-decoration: underline solid white;
+}
+
+.row-accordion {
+    margin: 10px;
+}
+
+.accordionOpen {
+    background-color: white;
+}
+
+.downArrow {
+    float: right;
+    margin-right: 20px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none; 
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.clickMeText {
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+
+
+
+

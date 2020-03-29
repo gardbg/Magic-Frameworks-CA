@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import NavBar from './components/navbar';
+import Login from './pages/Login';
+import Footer from './components/footer';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/styles.scss';
+
+export default function App(props) {
+  const [isLoggedIn, setisLoggedIn] = useState(true);
+
+  const updateLogin = () => {
+    setisLoggedIn(true);
+  }
+
+  const logOut = () => {
+    localStorage.clear();
+    setisLoggedIn(false);
+  }
+
+  return (localStorage.getItem('username') ==='gard' && localStorage.getItem('password') === '123456' && isLoggedIn) ?
+   (
+    <div className="container-fluid">
+      <NavBar />
+      <button type="button" className="btn btn-dark btn-logOut" onClick={logOut}>Log out</button>
+      <div className="container">
+        {props.children}
+      </div>
+      <Footer />
     </div>
-  );
+  ):
+  (
+    <Login updateLoginStatus={updateLogin} />
+  )
 }
-
-export default App;

@@ -1,0 +1,107 @@
+.card {
+    text-align: center;
+    margin: 10px;
+}
+
+.btn-dark {
+    background: #485563;
+    background: -webkit-linear-gradient(to right, #29323c, #485563); 
+    background: linear-gradient(to right, #29323c, #485563); 
+    color: white;
+}
+
+.btn-dark:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    color: darkgrey;
+}
+
+.row-contactform {
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.btn-logOut {
+    float: right;
+}
+
+.rowCardSpecific {
+    text-align: center;
+}
+
+.rowCardSpecific h4 {
+    text-align: left;
+}
+
+.h1-card__specific {
+    text-align: center;
+}
+
+.Searchbar {
+    width: 80%;
+}
+
+.btn-dark {
+    padding: 10px;
+    margin: 10px;
+}
+
+.navbar-brand {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 100px;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.textAbout {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.textCardSpecific h4 {
+    text-align: left !important;
+}
+
+.btnCardSpecific {
+    text-align: center;
+}
+
+.navbar {
+    background-image: url('https://airwallpaper.com/wp-content/uploads/wall001/Magic-The-Gathering-Wallpaper-HD.jpg');
+    background-size: cover;
+}
+
+.nav-item {
+    color: white;
+    text-align: center;
+}
+
+.nav-item:hover {
+    color: lightgrey;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.loadingImage {
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbarNavAltMarkup {
+        display: block !important;
+    }
+
+    .btn-logOut {
+        display: none;
+    }
+
+    .loadingImage {
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+  }

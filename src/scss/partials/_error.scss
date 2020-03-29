@@ -1,0 +1,12 @@
+.error {
+    color: red;
+
+    &__border {
+        border: solid 1 px red;
+    }
+
+    &__hide {
+        display: none;
+    }
+}
+
